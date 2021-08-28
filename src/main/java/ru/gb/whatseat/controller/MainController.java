@@ -19,7 +19,7 @@ public class MainController {
     @GetMapping
     public String first(Model model){
         model.addAttribute("dish", dishService.getDish());
-        return "main";
+        return "index";
     }
 
     @PostMapping("/")
