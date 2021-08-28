@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background: #2c2c2c;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #2c2c2c;
+    min-height: 100vh;
+}
+
+.left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 0 30px 30px 0;
+    padding: 27px 10px 0;
+    height: 100vh;
+    /*max-height: 1511px;*/
+}
+
+.burger:before {
+    content: "";
+    background-image: url(../img/burger.svg);
+    padding: 25px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #00ff00;
+}
+
+.icon {
+    margin-bottom: 8px;
+}
+
+.person-nav:before {
+    content: "";
+    background-image: url(../img/person.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sound-nav:before {
+    content: "";
+    background-image: url(../img/sound.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.notes-nav:before {
+    content: "";
+    background-image: url(../img/notes.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.line-nav:before {
+    content: "";
+    background-image: url(../img/line.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.suitcase-nav:before {
+    content: "";
+    background-image: url(../img/suitcase.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user-nav:before {
+    content: "";
+    background-image: url(../img/user.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.letter-nav:before {
+    content: "";
+    background-image: url(../img/letter.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.money-nav:before {
+    content: "";
+    background-image: url(../img/money.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.arr-nav:before {
+    content: "";
+    background-image: url(../img/arr.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.track-nav:before {
+    content: "";
+    background-image: url(../img/track.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.page-nav:before {
+    content: "";
+    background-image: url(../img/page.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pointer-nav:before {
+    content: "";
+    background-image: url(../img/pointer.svg);
+    padding: 30px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bottom-block {
+    margin: auto 0 27px 0;
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 24px 64px 64px 148px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-weight: Bold;
+    font-size: 36px;
+    line-height: 52px;
+    margin: 0 0 26px 0;
+    padding: 0;
+}
+
+.h1 {
+    display: block;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    font-weight: Bold;
+    font-size: 36px;
+    line-height: 52px;
+    margin: 0 0 26px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 3px solid #e7b400;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.nav a {
+    flex-grow: 1;
+}
+
+.nav a {
+    font-family: 'Jost', sans-serif;
+    padding: 16px 0 41px 30px;
+    display: block;
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    border-top: 6px solid #e7b400;
+    text-decoration: none;
+}
+
+.info-block {
+    position: relative;
+    max-width: 1220px;
+    margin: 0;
+    padding: 32px 32px 0 32px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.search-panel {
+    display: flex;
+    flex-direction: column;
+    font-family: Jost sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    border-radius: 20px;
+    background: #383838;
+    padding: 16px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.search__label {
+    display: inline-block;
+    font-size: 24px;
+    font-family: Jost sans-serif;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.search {
+    display: flex;
+}
+
+#search__input {
+    border-radius: 10px 0 0 10px;
+    border: #2c2c2c 1px solid;
+    height: 32px;
+    flex-grow: 1;
+    font-family: Jost sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+.search__button {
+    width: 200px;
+    background: #e7b400;
+    border-radius: 0 10px 10px 0;
+    border: #2c2c2c 1px solid;
+    font-family: Jost sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.block-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipe {
+    width: 350px;
+    border-radius: 20px;
+    background: #383838;
+    padding: 16px 16px 32px 16px;
+    margin-bottom: 32px;
+}
+
+.recipe__image img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.recipe__name {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.recipe__ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredient_quantity {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
